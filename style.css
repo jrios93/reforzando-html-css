@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Figtree ExtraBold";
+  src: url("/assets/fonts/static/Figtree-ExtraBold.woff2") format("woff2");
+  font-weight: 800; /* ExtraBold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree SemiBold";
+  src: url("/assets/fonts/static/Figtree-SemiBold.woff2") format("woff2");
+  font-weight: 600; /* SemiBold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree Italic";
+  src: url("/assets/fonts/static/Figtree-Italic-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Figtree Variable";
+  src: url("/assets/fonts/static/Figtree-VariableFont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.container {
+  background-color: #f5d04e;
+  font-family: "Figtree", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffff;
+  width: 400px;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 1.5rem;
+
+  webkit-box-shadow: 14px 10px 6px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 14px 10px 6px 1px rgba(0, 0, 0, 1);
+  box-shadow: 14px 10px 6px 1px rgba(0, 0, 0, 1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.span-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  text-transform: capitalize;
+}
+
+.span-flex span:first-child {
+  background-color: #f5d04e;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card img {
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+}
+.card .autor {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.card .autor p {
+  font-weight: bold;
+}
+
+.card h1 {
+  cursor: pointer;
+}
+
+.card p {
+  color: #797878;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.card .autor p {
+  color: rgb(21, 21, 21);
+}
+.card h1:hover {
+  color: #f5d04e;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 300px;
+    gap: 1rem;
+  }
+  .card h1 {
+    font-size: 18px;
+  }
+  .card p {
+    font-size: 12px;
+    color: #111;
+  }
+  .span-flex {
+    font-size: 12px;
+  }
+  .autor img {
+    width: 32px;
+  }
+  .card .autor p {
+    color: #000;
+    font-weight: 900;
+  }
+  .span-flex span:first-child {
+    font-weight: 900;
+  }
+}
